@@ -33,6 +33,13 @@ let mapleader=","
 set background=dark
 colorscheme solarized
 
+" ==================== Status Line ==================
+" Add relative path to to status line (use %F for full file)
+set statusline+=%f
+
+" Make Statusline visible
+set laststatus=2
+
 " ================ Turn Off Swap Files ==============
 
 set noswapfile
