@@ -5,6 +5,7 @@ set nocompatible
 " Tell Pathogen to infect, scan for new plugins.
 execute pathogen#infect()
 
+set ignorecase                  "Ignore case when searching
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
@@ -32,13 +33,17 @@ let mapleader=","
 
 set background=dark
 colorscheme solarized
-
+set cursorline
+set colorcolumn=80
 " ==================== Status Line ==================
 " Add relative path to to status line (use %F for full file)
-set statusline+=%f
+" set statusline+=%f
 
 " Make Statusline visible
-set laststatus=2
+" set laststatus=c2
+" set -g status-bg black
+" set -g status-fg yellow
+" set -g status-attr default
 
 " ================ Turn Off Swap Files ==============
 
